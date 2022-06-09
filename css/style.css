@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+
+.card-style {
+    margin: 1rem;
+    width: 30%;
+    border: 1px solid black;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Nav-container*/
+
+
+.nav-container{
+    height: 4rem;
+    background-color: #f6f3f3;
+}
+
+.nav-menu {
+	justify-content: space-between;
+	margin: 0 3rem;
+}
+
+
+.logo-nav {
+	height: 3rem;
+    margin-top: 6px;
+}
+
+.logo-img-nav {
+	height: 100%;
+}
+
+.carrito-img {
+	width: 70%;
+	padding: 12px 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*logo principal*/
+
+.logo-principal {
+	height: 20rem;
+	background-color: #EB4A5A;
+}
+
+.logo-div {
+	text-align: center;
+	padding: 54px 0;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Section-1*/
+
+.subtitles {
+	justify-content: space-around;
+    margin: 2rem 0;
+}
