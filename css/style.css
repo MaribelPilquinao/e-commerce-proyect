@@ -75,3 +75,12 @@ body{
 	justify-content: space-around;
     margin: 2rem 0;
 }
+
+
+.product-img-div {
+	padding: 2rem;
+}
+
+.product-img {
+    width: 100%;
+}
