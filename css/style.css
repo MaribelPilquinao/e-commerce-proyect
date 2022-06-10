@@ -83,9 +83,10 @@ body{
 }
 
 
-/* .product-img-div {
-	padding: 2rem;
-} */
+.subtitles h2{
+  margin-left: -12%;
+    
+}
 
 .product-img {
     width: 100%;
@@ -123,11 +124,35 @@ body{
 
 
 span{
-    margin-left: 75%;
+    margin-left: 0%;
     font-weight: bold;
 }
 
 p {
 	margin: 7% 0;
 	font-weight: bold;
+}
+
+.card-buttom {
+	width: 99%;
+	height: 10%;
+	background: #eb4a5a;
+	color: white;
+}
+
+.buttom-first {
+    width: 15%;
+    height: 40px;
+    background: white;
+    border: 1px solid #80808069;
+    position: relative;
+    left: 12%;
+}
+
+.buttom-end {
+	width: 22%;
+	height: 3rem;
+	margin: 6% 0% 0% 39%;
+	background: #eb4a5a;
+	color: white;
 }
