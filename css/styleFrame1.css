@@ -71,7 +71,7 @@
     margin-left: 8rem;
     text-align: center;
 }
-.boton__carrito{
+.boton__carrito, .btn__fin-compra{
     background-color: #eb4a5a;
     color: #ffffff;
     border: 0;
