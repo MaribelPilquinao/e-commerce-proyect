@@ -30,6 +30,9 @@ body{
 .nav-container{
     height: 4rem;
     background-color: #f6f3f3;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav-menu {
@@ -65,6 +68,8 @@ body{
 .logo-div {
 	text-align: center;
 	padding: 54px 0;
+    position: relative;
+    top: 7%;
 }
 
 
