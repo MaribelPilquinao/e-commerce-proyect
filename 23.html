@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/23.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <header>Academlo</header>
+    <div class="d-flex back-arrow"> 
+        <button class="arrow-btn"><img src="./images/left-arrow.svg" alt=""></button>
+        <p>Academlo - Tienda oficial</p>
+    </div>
+    <div class="d-flex justify-content-between cart-review">
+        <p>Resumen del pedido</p>
+        <p>$TBD 
+            <button class="down-arrow">
+                <img src="./images/down-arrow.svg" alt="">
+            </button>
+        </p>
+    </div>
+
+    <form class="form-container">
+            <div class="form-row">
+                <h2 class="sub-title">Datos de contacto</h2>
+                <div class="d-flex form-contact">
+                    <div class="form-group form-contact-label col-md-5">
+                        <label for="inputEmail4">Nombre(s)<span class="mandatory">*</span></label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group form-contact-label col-md-5">
+                        <label for="inputPassword4">Apellido<span class="mandatory">*</span></label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa tus apelidos">
+                    </div>
+                    <div class="form-group form-contact-label col-md-5">
+                        <label for="inputPassword4">Correo electronico<span class="mandatory">*</span></label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa tu correo electronico">
+                    </div>
+                </div>    
+            </div>
+            <h2 class="shipping-address sub-title">Direccion de envio</h2>
+            <div class="form-address-container d-flex">
+                <div class="form-address d-flex">
+                    <div class="form-group form-address-label col-md-12">
+                        <label for="inputAddress">Direccion de envio</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Calle">
+                    </div>
+                    <div class="form-group form-address-label col-md-4">
+                        <label for="inputAddress2">Numero interior</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-group form-address-label col-md-4">
+                        <label for="inputAddress2">Numero exterior</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                </div>
+                <div class="form-country d-flex">
+                    <div class="form-group form-country-label col-md-12">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group form-country-label col-md-4">
+                        <label for="inputZip">CP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group form-country-label col-md-4">
+                        <label for="inputState">Pais</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Mexico</option>
+                        <option>Estados Unidos</option>
+                        <option>Colombia</option>
+                        <option>Chile</option>
+                        <option>Venezuela</option>
+                        <option>Argentina</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary-container">
+                <h2 class="sub-title">Resumen del pedido</h2>
+                <div class="summary">
+                    <div class="sub-total-container">   
+                        <p>Subtotal:</p>
+                        <p class="sub-total"> $TBD </p>
+                    </div>
+                    <div class="shipping-container">
+                        <p>Envio</p>
+                        <p class="shipping"> $TBD</p>
+                    </div>
+                    <div class="total-container">
+                        <p>Total:</p>
+                        <p class="total"> $TBD</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-5 mb-5">
+                    <button type="submit" class="btn-red col-md-4">Continuar pago</button>
+                    <button type="submit" class="btn-white col-md-4">Volvel al carrito </button>
+                </div>
+            </div>
+            
+    </form>
+</body>
+</html>

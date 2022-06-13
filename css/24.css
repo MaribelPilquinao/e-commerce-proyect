@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #f6f3f3;
+}
+
+.back-arrow {
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.back-arrow p {
+    padding-top: 1em;
+}
+
+.arrow-btn {
+    border: none;
+}
+
+.cart-review {
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.down-arrow {
+    border: none;
+    background-color: none;
+}
+
+.cart-review {
+    background-color: #f9fafc;
+    align-items: center;
+    align-content: center;
+}
+
+.cart-review-cotainer {
+    display:flex;
+    width: 75%;
+    margin: .3em auto;
+    background-color: #f9fafc;
+    padding: 2em 4em 3em 4em;
+    
+}
+
+
+#color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.quantity p {
+    padding-top: 1em;
+}
+
+.delete-container {
+    flex:1 0 auto;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#delete-item {
+    width: 40px;
+    height: 40px;
+}
+
+.order-summary-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.sub-total-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9fafc;
+}
+
+.shipping-container {
+    display: flex;justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9fafc;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment {
+    width: 70%;
+    margin: auto;
+}
+
+.custom-control {
+    background-color: #f9fafc;
+    margin-right:3em ;
+}
+
+.btn-red {
+    background-color: #eb4a5a;
+    border: none;
+    color: white;
+    padding: .3em;
+}
+
+.btn-white {
+    color: #274671;
+    border: 1px solid #274671;
+    background-color: white;
+    padding: .3em;
+}
+
+.payment-container {
+    display: flex;
+}
