@@ -19,6 +19,15 @@ let product = [
     {productImg:'<img src="./images/product-5.png" class ="product-img"></img>' ,productImage: "image15", productItem: "Camisa Academlo", productColor: "Logo blanco, color negro", productPrice: "$2.000", divNro: "div15"},    
 ]
 
+let productoRelacionado = [
+
+    {productImg:'<img src="./images/product-1.png" class ="product-img"></img>',productImage: "image1", productItem: "Sudadera Academlo", productColor: "Logo rojo, color gris", productPrice: "$12.000", divNro: "div1"},
+    {productImg:'<img src="./images/product-2.png" class ="product-img"></img>' ,productImage: "image2", productItem: "Camisa Academlo", productColor: "Logo blanco, color rojo", productPrice: "$2.000", divNro: "div2"},
+    {productImg:'<img src="./images/product-3.png" class ="product-img"></img>' ,productImage: "image3", productItem: "Sudadera Academlo", productColor: "Logo rojo, color blanco", productPrice: "$12.000", divNro: "div3"},
+    {productImg:'<img src="./images/product-4.png" class ="product-img"></img>' ,productImage: "image4", productItem: "Sudadera Academlo", productColor: "Logo blanco, color rojo", productPrice: "$12.000", divNro: "div4"},
+    {productImg:'<img src="./images/product-5.png" class ="product-img"></img>' ,productImage: "image5", productItem: "Camisa Academlo", productColor: "Logo blanco, color negro", productPrice: "$2.000", divNro: "div5"}   
+]
+
 
 function cardGenerator(array) {
     // 1. Generar el codigo Html que voy a poenr en la pagina
@@ -55,3 +64,5 @@ function cardGenerator(array) {
 
 
 cardGenerator(product)
+
+cardGenerator(productoRelacionado)
