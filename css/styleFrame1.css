@@ -110,7 +110,13 @@
 
 .container__productos-relacionados{
     margin-left: 9rem;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25rem;
+    overflow: inherit;
+    position: relative;
+    right: 5%;
+    flex-direction: column;
 }
 .txt__contacto{
     margin-bottom: 1rem;
