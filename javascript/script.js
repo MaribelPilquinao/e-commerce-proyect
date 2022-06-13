@@ -29,6 +29,25 @@ let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || []
 
 
 
+// carrito 
+
+let carrito = [];
+    const precio = '$';
+    const items = document.querySelector('#items');
+    const talla = document.querySelector('#talla');
+    const color =document.querySelector('#color');
+    const acarrito = document.querySelector('#carrito');
+    const image = document.querySelector('#productImg');
+    const total = document.querySelector('#total');
+    const botonVaciar = document.querySelector('#boton-basurero');
+    const miLocalStorage = window.localStorage;
+
+// Menu- carrito de compras
+function toggleMenu(){
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("hidden");
+}
+
 
 function cardGenerator(array) {
     // 1. Generar el codigo Html que voy a poenr en la pagina
@@ -62,6 +81,7 @@ function cardGenerator(array) {
 
 
 cardGenerator(product)
+
 
 
 
@@ -136,6 +156,7 @@ function ContadorItems() {
     contador++
     console.log(contador)
 }
+
 
 
 
