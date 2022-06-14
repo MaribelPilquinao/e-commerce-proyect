@@ -134,3 +134,33 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+/* FOOTER */
+.footer__academlo-1{
+    background-color: rgba(10, 10, 10, 0.856);
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 22rem;
+    padding: 2rem;
+    
+}
+.iconos__contactos{
+    display: inline-flex;
+    position: relative;
+    top: 3rem; 
+}
+.iconos__contactos > p{
+    margin: 2rem;
+}
+.rigths{
+    position: relative;
+    bottom: -4rem;
+    font-size: .7rem;
+}
+.p__todos{
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    bottom: -4rem;
+}

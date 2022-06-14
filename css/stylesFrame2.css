@@ -73,4 +73,6 @@
 .btn__fin-compra{
     position: relative;
     left: 35%;
+    cursor: pointer;
+    margin-bottom: 8rem;
 }

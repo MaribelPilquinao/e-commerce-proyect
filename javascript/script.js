@@ -152,14 +152,6 @@ function addCart (id) {
 
 
 
-
-
-
-
-
-
-
-
 function ContadorItems() {
     contador++
     console.log(contador)
