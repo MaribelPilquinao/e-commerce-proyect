@@ -188,9 +188,11 @@ p {
     margin-top: 2rem;
 }
 .container_menu{
-    margin: .5rem;
+    margin: 4% 1%;
     padding: 1rem;
     display: flex;
+    position: fixed;
+    overflow: scroll;
 }
 .boton-1{
     background-color: transparent;
@@ -219,4 +221,37 @@ p {
     position: absolute;
     left: 80%;
     top: 35%;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.card-shopping {
+	display: flex;
+	margin: 15% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card-sp {
+	margin: 20% 0;
+    border: 1px solid rgba(128, 128, 128, 0.31);
+}
+
+.div-img-sp {
+	text-align: center;
+}
+
+.img-sp {
+	height: 60%;
+}
+
+
+.buttom-delete {
+	width: 16%;
+	background-color: red;
+	margin-left: 84%;
 }

@@ -25,7 +25,7 @@
             </div>
             
             <div class="carrito-img-nav ">
-                <button class="boton-1" onclick="toggleMenu()"> <img src="./images/carrito-img.png"
+                <button class="boton-1" onclick="toggleMenu(), generateShoppingCartList(), totalPrice()"> <img src="./images/carrito-img.png"
                         class="carrito-img"></button>
             </div>
 
@@ -35,39 +35,55 @@
     <div id="nav" class="hidden">
         <!-- carrito de compras -->
         <div class="container_menu">
-            <div class="">
+            <!-- Div sin classname, desde 38 hasta 86, abarcando aside.-->
 
-                <main id="items" class=""></main>
-                <!-- Carrito -->
-                <aside class="">
-                    <h2>Carrito de compras</h2>
-                    <!-- Elementos del carrito -->
-                    <ul id="acarrito" class=""></ul>
-                    <div class="img__productos-compra">
-                        <img id="image" src="" alt="">
+            <!-- <main id="items" class=""></main> -->
+            <!-- Carrito -->
+            <aside class="">
+                <h2>Carrito de compras</h2>
+                <!-- Elementos del carrito -->
+                <!-- <ul id="acarrito" class=""></ul>
+                <div class="img__productos-compra">
+                    <img id="image" src="" alt="">
+                </div>
+                <div class="text__seleccion-producto col-6">
+                    <p class="text__seleccion-producto">Hoodie rojo - logo blanco</p>
+                    <p class="text__seleccion-producto"><span></span>&dollar;</p>
+                    <div class="text__detalles-compra">
+                        <p id="talla" class="text__detalles-compra parrafo__talla">Talla:</p>
+                        <p id="color" class="text__detalles-compra">Color:</p>
                     </div>
-                    <div class="text__seleccion-producto col-6">
-                        <p class="text__seleccion-producto">Hoodie rojo - logo blanco</p>
-                        <p class="text__seleccion-producto"><span></span>&dollar;</p>
-                        <div class="text__detalles-compra">
-                            <p id="talla" class="text__detalles-compra parrafo__talla">Talla:</p>
-                            <p id="color" class="text__detalles-compra">Color:</p>
-                        </div>
-                        <div class="btns">
-                            <button class="btn botones__compra-mas">+</button>
-                            <p type="value">1</p>
-                            <button class="btn botones__compra-menos">-</button>
-                        </div>
-                        <div class="">
-                            <button class="btn boton__basurero">🗑</button>
-                        </div>
+                    <div class="btns">
+                        <button class="btn botones__compra-mas" type="button">+</button>
+                        <p type="value">1</p>
+                        <button class="btn botones__compra-menos" type="button">-</button>
                     </div>
-                    <hr>
-                    <!-- Precio -->
-                    <p class="text__subtotal">Subtotal: <span id="total"></span>&dollar;</p>
-                    <button id="boton-ir" class="boton__irAl-carrito">Ir al carrito</button>
-                </aside>
-            </div>
+                    <div class="">
+                        <button class="btn boton__basurero" type="button">🗑</button>
+                    </div>
+                </div>
+                <hr> -->
+
+                <div class="card-shopping" id="generate-card-shoping">
+                    <!-- <div class="div-img-sp">
+                        <img src="./images/product-4.png" class="img-sp">
+                    </div>
+
+                    <div class="data-sp">
+
+                        <p>Sudadera Academlo</p>
+                        <p>Logo blanco, color rojo</p>
+                        <p>ID: 4</p>
+                        <p>$12.000</p>
+                    </div> -->
+                </div>
+
+                
+                
+                <!-- Precio -->
+                <p class="text__subtotal">Subtotal: <span id="total-price">999999</span>&dollar;</p>
+                <button id="boton-ir" class="boton__irAl-carrito">Ir al carrito</button>
+            </aside>
         </div>
     </div>
     
@@ -112,6 +128,12 @@
 
         <button class ="buttom-end">Mas productos</button>
     </section>
+
+    <footer>
+
+                            ejemplo-footer      
+
+    </footer>
 
     
     <script src="./javascript/script.js"></script>
