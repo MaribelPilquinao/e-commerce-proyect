@@ -13,9 +13,9 @@
 .container__carrito-compras{
     background-color: #f2e6e674;
     display: flex;
-    width: 83rem;
+    width: 72rem;
     height: 25rem;
-    /* justify-content: center; */
+    justify-content: center;
     position: relative;
     left: -3%;
     overflow: scroll;

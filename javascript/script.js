@@ -79,6 +79,7 @@ function cardGenerator(array) {
 
     const container = document.getElementById("products-container")
     container.innerHTML = html
+
 }
 
 
@@ -145,15 +146,19 @@ function addCart (id) {
 
     localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
 
-
+    cardGenerator()
 }
+
 
 
 
 function ContadorItems() {
     contador++
     console.log(contador)
+    
+
 }
+
 
 
 
@@ -203,6 +208,8 @@ function generateShoppingCartList () {
    const container = document.getElementById("generate-card-shoping")
    container.innerHTML = html
 
+   
+
 }
 
 
@@ -249,6 +256,7 @@ function deleteItem(id){
   
     
 }
+
 
 
 
