@@ -92,7 +92,7 @@ body{
     
 }
 
-.product-img {
+/* .product-img {
     width: 100%;
 }
 
@@ -124,7 +124,7 @@ body{
 .div14 .product-img-div .product-img{
     width: 100%;
     height: 223px;
-}
+} */
 
 
 span{
@@ -133,7 +133,7 @@ span{
 }
 
 p {
-	margin: 7% 0;
+	margin: 5% 0;
 	font-weight: bold;
 }
 
@@ -142,6 +142,10 @@ p {
 	height: 10%;
 	background: #eb4a5a;
 	color: white;
+}
+
+.card-buttom:hover{
+    cursor: pointer;
 }
 
 .buttom-first {
@@ -193,6 +197,7 @@ p {
     display: flex;
     position: fixed;
     overflow: scroll;
+    height: 80%;
 }
 .boton-1{
     background-color: transparent;
@@ -264,7 +269,7 @@ p {
     text-align: center;
     display: inline-block;
     width: 100%;
-    height: 22rem;
+    height: 20rem;
     padding: 2rem;
     
 }
@@ -286,4 +291,14 @@ p {
     color: #ffffff;
     position: relative;
     bottom: -4rem;
+}
+
+
+.product-img-div {
+	height: 60%;
+}
+
+.product-img{
+    width: 100%;
+    height: 100%;
 }

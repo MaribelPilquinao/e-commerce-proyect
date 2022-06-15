@@ -27,12 +27,12 @@
     <div class="txt__academlo-atras">
         <p class=>Academlo-Tienda oficial</p>
     </div>
-    <div class="container__formulario-compras">
+    <div class="container__formulario-compras" >
         <div class="txt__carrito">
             <h2 class="text__carrito-compras">Carrito de compras</h2>
         </div>
-        <div class="container__carrito-compras">
-            <div class="img__producto-4">
+        <div class="container__carrito-compras" id="generate-card-shoping">
+            <!-- <div class="img__producto-4">
                 <img class="img__carrito-prod4" src="./images/product-4.png" alt="">
             </div>
             <div class="text__seleccion-producto col-6">
@@ -49,18 +49,21 @@
                 </div>
                 <div class="">
                     <button class="boton__basurero">🗑</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <div class="resumen__pedido col-12">
         <h3>Resumen del pedido</h3>
+        
+        <!-- <p>total</p> -->
+
         <ul class="pedido">
-            <li class="list-group-item">Subtotal:</li>
-            <li class="list-group-item">Envío:</li>
-            <li class="list-group-item">Total:</li>
+            
+            <p>Valor Producto total</p><li class="list-group-item" id="total-price"></li>
+
         </ul>
-        <button class="btn__fin-compra" onclick="location.href='http://127.0.0.1:5500/25.html'">Finalizar compra</button>
+        <button id="boton__fin-compra" class="btn__fin-compra" onclick="finalizarCompra()"><a href="./index.html">Finalizar compra</a></button>
     </div>
 
     
@@ -83,7 +86,7 @@
     </footer>
 
 
-
+    <script src="./javascript/script2.js"></script>
 
 </body>
 
