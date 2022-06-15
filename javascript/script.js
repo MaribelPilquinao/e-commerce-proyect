@@ -1,66 +1,59 @@
-"use strict"
+'use strict'
 
-let product = [
-    
-    { id: 1, productImg:'<img src="./images/product-1.png" class ="product-img"></img>',productImage: "image1", productItem: "Sudadera Academlo", productColor: "Logo rojo, color gris", productPrice:  12000, divNro: "div1"},
-    { id: 2, productImg:'<img src="./images/product-2.png" class ="product-img"></img>' ,productImage: "image2", productItem: "Camisa Academlo", productColor: "Logo blanco, color rojo", productPrice: 2000, divNro: "div2"},
-    { id: 3, productImg:'<img src="./images/product-3.png" class ="product-img"></img>' ,productImage: "image3", productItem: "Sudadera Academlo", productColor: "Logo rojo, color blanco", productPrice: 12000, divNro: "div3"},
-    { id: 4, productImg:'<img src="./images/product-4.png" class ="product-img"></img>' ,productImage: "image4", productItem: "Sudadera Academlo", productColor: "Logo blanco, color rojo", productPrice: 12000, divNro: "div4"},
-    { id: 5, productImg:'<img src="./images/product-5.png" class ="product-img"></img>' ,productImage: "image5", productItem: "Camisa Academlo", productColor: "Logo blanco, color negro", productPrice: 2000, divNro: "div5"},
-    { id: 6, productImg:'<img src="./images/product-5.png" class ="product-img"></img>' ,productImage: "image6", productItem: "Camisa Academlo", productColor: "Logo blanco, color negro", productPrice: 2000, divNro: "div6"},
-    { id: 7, productImg:'<img src="./images/product-4.png" class ="product-img"></img>' ,productImage: "image7", productItem: "Sudadera Academlo", productColor: "Logo blanco, color rojo", productPrice: 12000, divNro: "div7"},
-    { id: 8, productImg:'<img src="./images/product-6.png" class ="product-img"></img>' ,productImage: "image8", productItem: "Sudadera Academlo", productColor: "Logo negro, color gris", productPrice: 12000, divNro: "div8"},
-    { id: 9, productImg:'<img src="./images/product-7.png" class ="product-img"></img>' ,productImage: "image9", productItem: "Camisa Academlo", productColor: "Logo rojo, color blanco", productPrice: 2000, divNro: "div9"},
-    { id: 10, productImg:'<img src="./images/product-8.png" class ="product-img"></img>' ,productImage: "image10", productItem: "Sudadera Academlo", productColor: "Logo blanco, color negro", productPrice: 12000, divNro: "div10"},
-    { id: 11, productImg:'<img src="./images/product-1.png" class ="product-img"></img>' ,productImage: "image11", productItem: "Sudadera Academlo", productColor: "Logo rojo, color gris", productPrice: 12000, divNro: "div11"},
-    { id: 12, productImg:'<img src="./images/product-2.png" class ="product-img"></img>' ,productImage: "image12", productItem: "Camisa Academlo", productColor: "Logo blanco, color rojo", productPrice: 2000, divNro: "div12"},
-    { id: 13, productImg:'<img src="./images/product-3.png" class ="product-img"></img>' ,productImage: "image13", productItem: "Sudadera Academlo", productColor: "Logo rojo, color blanco", productPrice: 12000, divNro: "div13"},
-    { id: 14, productImg:'<img src="./images/product-4.png" class ="product-img"></img>' ,productImage: "image14", productItem: "Sudadera Academlo", productColor: "Logo blanco, color rojo", productPrice: 12000, divNro: "div14"},
-    { id: 15, productImg:'<img src="./images/product-5.png" class ="product-img"></img>' ,productImage: "image15", productItem: "Camisa Academlo", productColor: "Logo blanco, color negro", productPrice: 2000, divNro: "div15"}     
+const product = [
+
+  { id: 1, productImg: '<img src="./images/product-1.png" class ="product-img"></img>', productImage: 'image1', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color gris', productPrice: 12000, divNro: 'div1' },
+  { id: 2, productImg: '<img src="./images/product-2.png" class ="product-img"></img>', productImage: 'image2', productItem: 'Camisa Academlo', productColor: 'Logo blanco, color rojo', productPrice: 2000, divNro: 'div2' },
+  { id: 3, productImg: '<img src="./images/product-3.png" class ="product-img"></img>', productImage: 'image3', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color blanco', productPrice: 12000, divNro: 'div3' },
+  { id: 4, productImg: '<img src="./images/product-4.png" class ="product-img"></img>', productImage: 'image4', productItem: 'Sudadera Academlo', productColor: 'Logo blanco, color rojo', productPrice: 12000, divNro: 'div4' },
+  { id: 5, productImg: '<img src="./images/product-5.png" class ="product-img"></img>', productImage: 'image5', productItem: 'Camisa Academlo', productColor: 'Logo blanco, color negro', productPrice: 2000, divNro: 'div5' },
+  { id: 6, productImg: '<img src="./images/product-5.png" class ="product-img"></img>', productImage: 'image6', productItem: 'Camisa Academlo', productColor: 'Logo blanco, color negro', productPrice: 2000, divNro: 'div6' },
+  { id: 7, productImg: '<img src="./images/product-4.png" class ="product-img"></img>', productImage: 'image7', productItem: 'Sudadera Academlo', productColor: 'Logo blanco, color rojo', productPrice: 12000, divNro: 'div7' },
+  { id: 8, productImg: '<img src="./images/product-6.png" class ="product-img"></img>', productImage: 'image8', productItem: 'Sudadera Academlo', productColor: 'Logo negro, color gris', productPrice: 12000, divNro: 'div8' },
+  { id: 9, productImg: '<img src="./images/product-7.png" class ="product-img"></img>', productImage: 'image9', productItem: 'Camisa Academlo', productColor: 'Logo rojo, color blanco', productPrice: 2000, divNro: 'div9' },
+  { id: 10, productImg: '<img src="./images/product-8.png" class ="product-img"></img>', productImage: 'image10', productItem: 'Sudadera Academlo', productColor: 'Logo blanco, color negro', productPrice: 12000, divNro: 'div10' },
+  { id: 11, productImg: '<img src="./images/product-1.png" class ="product-img"></img>', productImage: 'image11', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color gris', productPrice: 12000, divNro: 'div11' },
+  { id: 12, productImg: '<img src="./images/product-2.png" class ="product-img"></img>', productImage: 'image12', productItem: 'Camisa Academlo', productColor: 'Logo blanco, color rojo', productPrice: 2000, divNro: 'div12' },
+  { id: 13, productImg: '<img src="./images/product-3.png" class ="product-img"></img>', productImage: 'image13', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color blanco', productPrice: 12000, divNro: 'div13' },
+  { id: 14, productImg: '<img src="./images/product-4.png" class ="product-img"></img>', productImage: 'image14', productItem: 'Sudadera Academlo', productColor: 'Logo blanco, color rojo', productPrice: 12000, divNro: 'div14' },
+  { id: 15, productImg: '<img src="./images/product-5.png" class ="product-img"></img>', productImage: 'image15', productItem: 'Camisa Academlo', productColor: 'Logo blanco, color negro', productPrice: 2000, divNro: 'div15' }
 ]
-let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || []
+let shoppingCart = JSON.parse(localStorage.getItem('shoppingCart')) || []
 // let shoppingCart = []
 
+// -----------------------------------------------------------------------------------------------------------------------------------//
 
-//-----------------------------------------------------------------------------------------------------------------------------------//
+// carrito
 
-
-// carrito 
-
-let carrito = [];
-    const precio = '$';
-    const items = document.querySelector('#items');
-    const talla = document.querySelector('#talla');
-    const color =document.querySelector('#color');
-    const acarrito = document.querySelector('#carrito');
-    const image = document.querySelector('#productImg');
-    const total = document.querySelector('#total');
-    const botonVaciar = document.querySelector('#boton-basurero');
-    const miLocalStorage = window.localStorage;
+const carrito = []
+const precio = '$'
+const items = document.querySelector('#items')
+const talla = document.querySelector('#talla')
+const color = document.querySelector('#color')
+const acarrito = document.querySelector('#carrito')
+const image = document.querySelector('#productImg')
+const total = document.querySelector('#total')
+const botonVaciar = document.querySelector('#boton-basurero')
+const miLocalStorage = window.localStorage
 
 // Menu- carrito de compras
 
-function toggleMenu(){
-    const nav = document.getElementById("nav");
-    nav.classList.toggle("hidden");
+function toggleMenu () {
+  const nav = document.getElementById('nav')
+  nav.classList.toggle('hidden')
 }
 
+// -----------------------------------------------------------------------------------------------------------------------------------//
 
-//-----------------------------------------------------------------------------------------------------------------------------------//
+function cardGenerator (array) {
+  // 1. Generar el codigo Html que voy a poenr en la pagina
+  // 2. Identificar el contenedor donde pondré mi código
+  // 3. Poner mi código
 
+  let html = ''
 
-
-
-function cardGenerator(array) {
-    // 1. Generar el codigo Html que voy a poenr en la pagina
-    // 2. Identificar el contenedor donde pondré mi código
-    // 3. Poner mi código
-
-    let html = ""
-
-    for(let i = 0; i < array.length; i++){
-        
-        html += `
+  for (let i = 0; i < array.length; i++) {
+    html += `
 
             <div class = "${array[i].divNro} col-2 card-style">
             
@@ -74,14 +67,12 @@ function cardGenerator(array) {
                 <button class="card-buttom" type="button" onclick="addCart(${array[i].id})">agregar al carrito</button>
             </div>
         
-        `;
-    }
+        `
+  }
 
-    const container = document.getElementById("products-container")
-    container.innerHTML = html
-
+  const container = document.getElementById('products-container')
+  container.innerHTML = html
 }
-
 
 // let data_a = [...];
 // let daba_b = [...];
@@ -91,90 +82,66 @@ function cardGenerator(array) {
 cardGenerator(product)
 // cardGenerator(OtherData)
 
-
-
-
-//-----------------------------------------------------------------------------------------------------------------------------------//
+// -----------------------------------------------------------------------------------------------------------------------------------//
 
 // funciones principales para callbacks.
 
-function filter(array, cb) {
-    let filteredData = [];
-    for(let i = 0; i < array.length; i++) {
-        let result = cb(array[i]);
-        if(result) {
-            filteredData.push(array[i]);
-        }
+function filter (array, cb) {
+  const filteredData = []
+  for (let i = 0; i < array.length; i++) {
+    const result = cb(array[i])
+    if (result) {
+      filteredData.push(array[i])
     }
-    return filteredData;
+  }
+  return filteredData
 }
 
-function find(array, cb) {
-    for(let i=0; i<array.length; i++) {
-        let result = cb(array[i]);
-        if(result===true) {
-            return array[i];
-        }
+function find (array, cb) {
+  for (let i = 0; i < array.length; i++) {
+    const result = cb(array[i])
+    if (result === true) {
+      return array[i]
     }
+  }
 }
 
-
-//-----------------------------------------------------------------------------------------------------------------------------------//
-
-
-
-
+// -----------------------------------------------------------------------------------------------------------------------------------//
 
 let contador = 0
 
-
-
-
 function addCart (id) {
+  function cbFindId (product) {
+    return product.id === id
+  }
 
+  const productFinded = find(product, cbFindId)
 
-    function cbFindId (product){
-        return product.id === id
-    }
+  shoppingCart.push(productFinded)
 
-    let productFinded = find(product,cbFindId);
+  console.log('shoppingCart')
+  console.log(shoppingCart)
 
-    shoppingCart.push(productFinded)
+  localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart))
 
-    console.log("shoppingCart")
-    console.log(shoppingCart)
-
-    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
-
-    cardGenerator()
+  generateShoppingCartList()
 }
 
-
-
-
-function ContadorItems() {
-    contador++
-    console.log(contador)
-    
-
+function ContadorItems () {
+  contador++
+//   console.log(contador)
 }
-
-
-
 
 function generateShoppingCartList () {
+  const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
+  console.log(shoppingCartTemporal)
 
-    
-    let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart")) || []
-    console.log(shoppingCartTemporal)
+  // let totalPrice = 0
 
-    // let totalPrice = 0
+  let html = ''
 
-    let html = ""
-
-    for(let i = 0; i < shoppingCartTemporal.length; i++){
-        
-        html += `
+  for (let i = 0; i < shoppingCartTemporal.length; i++) {
+    html += `
 
         <div class="card-sp">
             <div class="div-img-sp">
@@ -194,77 +161,54 @@ function generateShoppingCartList () {
         </div>
 
         `
-        // totalPrice = totalPrice + shoppingCartTemporal[i].productPrice
-        // console.log(totalPrice)
+    // totalPrice = totalPrice + shoppingCartTemporal[i].productPrice
+    // console.log(totalPrice)
 
-        // let totalPriceHtml = getElementById("total")
-        // totalPriceHtml.innerHTML
-    }
+    // let totalPriceHtml = getElementById("total")
+    // totalPriceHtml.innerHTML
+  }
 
-
-
-
-
-   const container = document.getElementById("generate-card-shoping")
-   container.innerHTML = html
-
-   
-
+  totalPrice()
+  const container = document.getElementById('generate-card-shoping')
+  container.innerHTML = html
 }
 
+function totalPrice () {
+  let resultado = 0
+  const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart'))
 
+  // console.log("TotalPrice.log")
+  // console.log(shoppingCartTemporal)
 
-function totalPrice(){
-    
-    let resultado = 0
-    let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart"))
+  for (let i = 0; i < shoppingCartTemporal.length; i++) {
+    resultado = resultado + shoppingCartTemporal[i].productPrice
+    // console.log(resultado)
+  }
 
-    // console.log("TotalPrice.log")
-    // console.log(shoppingCartTemporal)
+  const container = document.getElementById('total-price')
+  container.innerHTML = resultado
 
-
-    for(let i = 0; i < shoppingCartTemporal.length; i++){
-
-        resultado = resultado + shoppingCartTemporal[i].productPrice
-        // console.log(resultado)
-    }
-
-    const container = document.getElementById("total-price")
-    container.innerHTML = resultado
-
-    localStorage.setItem("total-price-ls", JSON.stringify(resultado))
-
+  localStorage.setItem('total-price-ls', JSON.stringify(resultado))
 }
 
-
-function deleteItem(id){
-
-    let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart")) || []
-    for(let i = 0; i < shoppingCartTemporal.length; i++){
-        if(id === shoppingCartTemporal[i].id){
-            shoppingCartTemporal.splice(i,1)
-        }
-
+function deleteItem (id) {
+  const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
+  for (let i = 0; i < shoppingCartTemporal.length; i++) {
+    if (id === shoppingCartTemporal[i].id) {
+      shoppingCartTemporal.splice(i, 1)
     }
+  }
 
-    shoppingCart = shoppingCartTemporal
-    // console.log(shoppingCart)
+  shoppingCart = shoppingCartTemporal
+  // console.log(shoppingCart)
 
-    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
+  localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart))
 
-    generateShoppingCartList(shoppingCart)
-  
-    
+  generateShoppingCartList(shoppingCart)
 }
-
-
-
-
-
 
 window.addCart = addCart
 
 window.generateShoppingCartList = generateShoppingCartList
 
-window.totalPrice = totalPrice
-
+totalPrice()
