@@ -93,8 +93,6 @@ cardGenerator(product)
 
 
 
-
-
 //-----------------------------------------------------------------------------------------------------------------------------------//
 
 // funciones principales para callbacks.
@@ -161,9 +159,9 @@ function ContadorItems() {
 
 function generateShoppingCartList () {
 
-    // console.log("generando html")
-
+    
     let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart")) || []
+    console.log(shoppingCartTemporal)
 
     // let totalPrice = 0
 
@@ -210,13 +208,13 @@ function generateShoppingCartList () {
 
 
 function totalPrice(){
-
+    
+    let resultado = 0
     let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart"))
 
     // console.log("TotalPrice.log")
     // console.log(shoppingCartTemporal)
 
-    let resultado = 0
 
     for(let i = 0; i < shoppingCartTemporal.length; i++){
 
@@ -227,12 +225,14 @@ function totalPrice(){
     const container = document.getElementById("total-price")
     container.innerHTML = resultado
 
+    localStorage.setItem("total-price-ls", JSON.stringify(resultado))
+
 }
 
 
 function deleteItem(id){
 
-    let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart"))
+    let shoppingCartTemporal = JSON.parse(localStorage.getItem("shoppingCart")) || []
     for(let i = 0; i < shoppingCartTemporal.length; i++){
         if(id === shoppingCartTemporal[i].id){
             shoppingCartTemporal.splice(i,1)
@@ -241,12 +241,15 @@ function deleteItem(id){
     }
 
     shoppingCart = shoppingCartTemporal
-    console.log(shoppingCart)
+    // console.log(shoppingCart)
 
-    localStorage.setItem("sp-modified", JSON.stringify(shoppingCart))
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
+
+    generateShoppingCartList(shoppingCart)
   
     
 }
+
 
 
 
@@ -256,3 +259,4 @@ window.addCart = addCart
 window.generateShoppingCartList = generateShoppingCartList
 
 window.totalPrice = totalPrice
+
