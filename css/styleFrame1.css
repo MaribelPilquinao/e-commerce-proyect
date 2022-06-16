@@ -6,7 +6,7 @@
 .txt__academlo-atras p{
     margin: 1.5rem;
 }
-.info__playeras-colores h2, p{
+.info__playeras-colores h2{
     margin: 1.5rem;
 }
 .txt__academplo{
@@ -46,7 +46,7 @@
     margin-left: 9rem;
     
 }
-.txt__tallas h3, p{
+.txt__tallas h3{
     display: inline-flex;
     margin: 0;
 }
