@@ -37,6 +37,10 @@ body{
     width: 100%;
     z-index: 9999;
 }
+.boton__irAl-carrito{
+    
+}
+
 
 .nav-menu {
 	justify-content: space-between;
@@ -68,12 +72,17 @@ body{
 	background-color: #EB4A5A;
 }
 
+
 .logo-div {
 	text-align: center;
 	width: 20rem;
     left: 40%;
+
+
     position: relative;
-    top: 7%;
+    left: 35%;
+   
+    
 }
 .logo-div-academlo {
     width: 100%;
@@ -83,7 +92,9 @@ body{
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Section-1*/
-
+#todos__nuestros-productos{
+    color: rgba(48, 47, 47, 0.806);
+}
 .section-container {
 	margin: 5%;
 }
@@ -98,6 +109,27 @@ body{
 .subtitles h2{
   margin-left: -12%;
     
+}
+.product-img-div:hover .product-img{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+}
+
+.product-img-div{
+    overflow:hidden;
+    cursor: pointer;
+    
+}
+.card-style{
+    border: 1px dotted rgba(207, 157, 63, 0.72);
+}
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
 }
 
 /* .product-img {
@@ -269,6 +301,7 @@ p {
 
 
 .buttom-delete {
+
         width: 20%;
         height: 2rem;
         background-color: rgba(241, 14, 14, 0.858);
@@ -278,6 +311,9 @@ p {
         border: 0;
         color:#ffffff;
     
+
+
+
 }
 .ir-alCarrito{
     text-decoration: none;
