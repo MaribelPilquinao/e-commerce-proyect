@@ -1,3 +1,4 @@
+
 function cardGeneratorStorage() {
 
     let html = ""
@@ -8,7 +9,6 @@ function cardGeneratorStorage() {
         
         html += `
 
-            <div class = "${array[i].divNro} col-2 card-style">
             
                 <div class="product-img-div">
                     ${array[i].productImg}

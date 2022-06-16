@@ -1,5 +1,6 @@
 'use strict'
 
+
 const product = [
 
   { id: 1, productImg: '<img src="./images/product-1.png" class ="product-img"></img>', productImage: 'image1', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color gris', productPrice: 12000, divNro: 'div1' },
@@ -50,14 +51,18 @@ function cardGenerator (array) {
   // 2. Identificar el contenedor donde pondré mi código
   // 3. Poner mi código
 
+
   let html = ''
 
   for (let i = 0; i < array.length; i++) {
     html += `
 
-            <div class = "${array[i].divNro} col-2 card-style">
+
+
+
+            <div class = "${array[i].divNro} col-2 card-style ">
             
-                <div class="product-img-div">
+                <div class="product-img-div ">
                     ${array[i].productImg}
                 </div>
                 <p>${array[i].productItem}</p>
@@ -119,10 +124,12 @@ function addCart (id) {
 
   shoppingCart.push(productFinded)
 
+
   console.log('shoppingCart')
   console.log(shoppingCart)
 
   localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart))
+
 
   generateShoppingCartList()
 }
@@ -169,8 +176,9 @@ function generateShoppingCartList () {
   }
 
   totalPrice()
-  hiddenBottom()
 
+
+  hiddenBottom()
 
   const container = document.getElementById('generate-card-shoping')
   container.innerHTML = html
@@ -178,7 +186,9 @@ function generateShoppingCartList () {
 
 function totalPrice () {
   let resultado = 0
-  const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
+
+    const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
+
 
   // console.log("TotalPrice.log")
   // console.log(shoppingCartTemporal)
@@ -217,28 +227,27 @@ function hiddenBottom(){
   if(globalPrice == 0){
     document.getElementById("boton-ir").style.display = "none";
 
-    
+
 
   }
+
 
   else if(globalPrice != 0){
     document.getElementById("boton-ir").style.display = "block";
 
+
+
   }
-
-
-  console.log(globalPrice)
-
-
 }
 
 
-
+  console.log(globalPrice)
 
 window.addCart = addCart
 
 window.generateShoppingCartList = generateShoppingCartList
 
+
 totalPrice()
-hiddenBottom()
+
 
