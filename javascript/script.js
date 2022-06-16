@@ -1,5 +1,6 @@
 'use strict'
 
+
 const product = [
 
   { id: 1, productImg: '<img src="./images/product-1.png" class ="product-img"></img>', productImage: 'image1', productItem: 'Sudadera Academlo', productColor: 'Logo rojo, color gris', productPrice: 12000, divNro: 'div1' },
@@ -55,9 +56,9 @@ function cardGenerator (array) {
   for (let i = 0; i < array.length; i++) {
     html += `
 
-            <div class = "${array[i].divNro} col-2 card-style">
+            <div class = "${array[i].divNro} col-2 card-style ">
             
-                <div class="product-img-div">
+                <div class="product-img-div ">
                     ${array[i].productImg}
                 </div>
                 <p>${array[i].productItem}</p>
