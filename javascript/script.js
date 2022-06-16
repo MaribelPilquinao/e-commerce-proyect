@@ -170,13 +170,16 @@ function generateShoppingCartList () {
   }
 
   totalPrice()
+
+  hiddenBottom()
+
   const container = document.getElementById('generate-card-shoping')
   container.innerHTML = html
 }
 
 function totalPrice () {
   let resultado = 0
-  const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart'))
+    const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
 
   // console.log("TotalPrice.log")
   // console.log(shoppingCartTemporal)
@@ -207,6 +210,26 @@ function deleteItem (id) {
 
   generateShoppingCartList(shoppingCart)
 }
+
+function hiddenBottom(){
+
+  let globalPrice = localStorage.getItem("total-price-ls") || null
+
+  if(globalPrice == 0){
+    document.getElementById("boton-ir").style.display = "none";
+
+
+
+  }
+
+  else if(globalPrice != 0){
+    document.getElementById("boton-ir").style.display = "block";
+
+  }
+}
+
+
+  console.log(globalPrice)
 
 window.addCart = addCart
 
