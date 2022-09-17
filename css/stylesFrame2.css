@@ -15,11 +15,12 @@
     display: flex;
     width: 72rem;
     height: 25rem;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     left: -3%;
     overflow: scroll;
     flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 
 .img__carrito-prod4{
@@ -83,7 +84,9 @@
 
 
 .product-img-div {
-	height: 60%;
+    height: 50%; 
+    width: 50%;
+    margin-top: 10%;
 }
 
 .product-img{
@@ -121,3 +124,26 @@
     width: 100%;
     height: 100%;
 } */
+
+
+.text-div-sp {
+	width: 50%;
+}
+
+.card-frame2 {
+    width: 25%;
+    height: 80%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.nav-container {
+    height: 4rem;
+    background-color: #f6f3f3;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+  }

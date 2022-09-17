@@ -1,3 +1,4 @@
+
 function cardGeneratorStorage() {
 
     let html = ""
@@ -8,15 +9,19 @@ function cardGeneratorStorage() {
         
         html += `
 
-            <div class = "${array[i].divNro} col-2 card-style">
-            
+            <div class="card-frame2">
                 <div class="product-img-div">
-                    ${array[i].productImg}
+                ${array[i].productImg}
                 </div>
-                <p>${array[i].productItem}</p>
-                <p>${array[i].productColor}</p>
-                <p>ID: ${array[i].id}</p>
-                <span>$${array[i].productPrice}</span>
+                
+                <div class="text-div-sp">
+                    <p>${array[i].productItem}</p>
+                    <p>${array[i].productColor}</p>
+                    <p>ID: ${array[i].id}</p>
+                    <span>$${array[i].productPrice}</span>
+                
+                </div>
+                
             </div>
         
         `;
