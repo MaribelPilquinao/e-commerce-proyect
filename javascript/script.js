@@ -187,7 +187,9 @@ function generateShoppingCartList () {
 function totalPrice () {
   let resultado = 0
 
+
     const shoppingCartTemporal = JSON.parse(localStorage.getItem('shoppingCart')) || []
+
 
 
   // console.log("TotalPrice.log")
@@ -232,8 +234,10 @@ function hiddenBottom(){
   }
 
 
+
   else if(globalPrice != 0){
     document.getElementById("boton-ir").style.display = "block";
+
 
 
 
